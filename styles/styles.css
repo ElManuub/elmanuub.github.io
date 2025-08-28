@@ -65,7 +65,7 @@ body {
 /* -- PRINCIPAL CONTENT ---*/
 .about {
   width: 800px;
-  height: 500px;
+  height: 800px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   place-items: center;
@@ -102,7 +102,7 @@ body {
 
 /* --- technologies ---*/
 .technologies{
-  height: 250px;
+  height: 500px;
   margin: auto;
   position: relative;
   width: 90%;
@@ -163,3 +163,13 @@ body {
   transform: rotateZ(180deg);
 }
 /* --- experiencia --- */
+.project_title{
+  text-align: center;
+}
+.experience {
+  display: flex;
+  justify-content: space-between;
+}
+.experience_projects img {
+  width: 100%;
+}
