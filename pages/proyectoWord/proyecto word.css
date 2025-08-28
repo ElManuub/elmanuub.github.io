@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    background-image: url("iconos/fondo.jpg");
+    padding-bottom: 20px;
+    font-family: 'Times New-10px Roman';
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+
+body{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("iconos/blanco.jpg");
+    text-align: center;
+}
+
+.logoWord{
+    width: 100px;
+    color: #ffffff;
+
+}
+.c,.s,.m,.n,.r{
+    width: 50px;
+}
+.colorTexto{
+    height:60px;
+}
+
+.documento{
+    width: 180vh;
+    height: 100vh;
+    padding: 20px;
+    font-size: 25px;
+}
+.tamanos,.tiposDeLetra{
+    margin: 10px;
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+}
+
+/*botones*/
+.BNegritas{
+    font-weight: bold;
+}
+.cursiva{
+font-style: italic;
+}
+
+.textoJustificado{
+text-align: justify;
+}
+
+.textoIzquierda{
+    text-align: left;
+}
+
+.textoDerecha{
+    text-align: right;
+}
+
+.textoCentrado{
+    text-align:center;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+.TMayusculas{
+    text-transform: uppercase;
+}
+
+.TMinusculas{
+    text-transform: lowercase;
+}
+
+.ResaltadoTexto{
+    text-decoration: underline;
+    text-decoration-color: #f00000;
+}
+
+
+/*color de texto*/
+.colorAzul{
+    color: #0707fb;
+}
+
+.botonApretado{
+   background-color:#bdbcbc;
+}
