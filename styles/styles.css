@@ -174,6 +174,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .projects_single {
   height: auto;
 }
@@ -182,6 +183,10 @@ body {
   height: auto;
   opacity: .8;
   border-radius: 5px;
+  transition: .5s ease;
+}
+.projects_single .experience_projects img:hover{
+  transform: scale(1.05);
 }
 .projects_single .experience_projects{
   margin: 0 auto;
@@ -192,7 +197,7 @@ body {
   gap: 15px;
   width: 90%;
 }
-.resume {
+.single_resume {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,4 +205,33 @@ body {
   gap: 15px;
   padding: 15px;
   text-align: center;
+}
+.single_resume ul {
+  display: flex;
+  gap: 15px;
+}
+.single_resume li {
+  list-style: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: ease .5s;
+}
+.single_resume li:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.js {
+  border: 1px solid rgb(255, 255, 255);
+  background: linear-gradient(rgb(208, 184, 0), rgb(181, 129, 0));
+  font-weight: bolder;
+}
+.html {
+  border: 1px solid rgb(255, 255, 255);
+  background: linear-gradient(rgb(216, 130, 0), rgb(163, 98, 0));
+  font-weight: bolder;
+}
+.css {
+  border: 1px solid rgb(255, 255, 255);
+  background: linear-gradient(rgb(0, 74, 212), rgb(1, 34, 151));
+  font-weight: bolder;
 }
