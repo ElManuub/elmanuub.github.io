@@ -86,7 +86,7 @@ ul{
   transform: scale(1.1);
 }
 /*Para moviles*/
-@media (max-width: 610px) {
+@media (max-width: 960px) {
   .contenedor{
     grid-template-columns: repeat(2, 1fr); 
   }
@@ -99,7 +99,15 @@ ul{
 	  width: 150px;
   }
   .contenedor{
-    width: 90;
+    width: 90%;
     padding: 0;
+  }
+
+  @media (max-width: 400px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+      width: 100%;
+      padding: 10px;
+    }
   }
 }
