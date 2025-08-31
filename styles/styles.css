@@ -26,7 +26,7 @@ body {
   align-items: center;
   justify-content: space-between;
   color: #cacaca;
-  border-bottom: .5px solid #cacaca;
+  border-bottom: 0.5px solid #cacaca;
 }
 
 .header-nav a {
@@ -34,6 +34,7 @@ body {
   outline: none;
   color: #cacaca;
   font-size: 1.5rem;
+  padding: 0 15px;
 }
 
 .separate {
@@ -41,7 +42,7 @@ body {
   width: 98%;
   height: 1px;
   background-color: #262626;
-  box-shadow: .5px 1px 1px;
+  box-shadow: 0.5px 1px 1px;
 }
 
 /* NAME */
@@ -101,7 +102,7 @@ body {
 }
 
 /* --- technologies ---*/
-.technologies{
+.technologies {
   height: 500px;
   margin: auto;
   position: relative;
@@ -111,7 +112,7 @@ body {
   overflow: hidden;
 }
 
-.list_techs{
+.list_techs {
   display: flex;
   width: calc(100 * 18);
   animation: scroll 40s linear infinite;
@@ -139,25 +140,25 @@ body {
 }
 
 .technologies::before,
-.technologies::after{
+.technologies::after {
   background: linear-gradient(
     to right,
     rgb(0, 0, 0) 0%,
     rgb(255, 255, 255, 0) 100%
-    );
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
 }
 
-.technologies::before{
+.technologies::before {
   left: 0;
   top: 0;
 }
 
-.technologies::after{
+.technologies::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
@@ -167,7 +168,7 @@ body {
   text-align: center;
   padding: 100px;
 }
-.project_title{
+.project_title {
   text-align: center;
 }
 .experience {
@@ -178,17 +179,17 @@ body {
 .projects_single {
   height: auto;
 }
-.projects_single .experience_projects img{
+.projects_single img {
   width: 100%;
   height: auto;
-  opacity: .8;
+  opacity: 0.8;
   border-radius: 5px;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-.projects_single .experience_projects img:hover{
+.projects_single img:hover {
   transform: scale(1.05);
 }
-.projects_single .experience_projects{
+.projects_single {
   margin: 0 auto;
   height: 100%;
   display: grid;
@@ -202,9 +203,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   padding: 15px;
   text-align: center;
+}
+.single_resume + .reverse {
+  flex-direction: column-reverse;
+}
+.single_resume .resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 .single_resume ul {
   display: flex;
@@ -212,11 +222,11 @@ body {
 }
 .single_resume li {
   list-style: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   border-radius: 30px;
-  transition: ease .5s;
+  transition: ease 0.5s;
 }
-.single_resume li:hover{
+.single_resume li:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -234,4 +244,40 @@ body {
   border: 1px solid rgb(255, 255, 255);
   background: linear-gradient(rgb(0, 74, 212), rgb(1, 34, 151));
   font-weight: bolder;
+}
+
+/* --- projects mas op ---*/
+.projects {
+  margin: 25px auto;
+}
+
+/* --- mobile device ---*/
+
+@media (max-width: 800px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-my {
+    width: 90%;
+  }
+
+  .dinamic {
+    padding: 25px 15px;
+  }
+
+  @media (max-width: 732px) {
+    .projects_single {
+      margin: 0 auto;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      grid-row: 25px;
+      width: 90%;
+    }
+
+  }
 }
